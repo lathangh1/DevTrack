@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevTrack - Project Management</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="project-controls">
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search projects..."
+    >
+    <div class="dashboard">
+
+    <div class="dashboard-card">
+        <h3>Total Projects</h3>
+        <p id="totalProjects">0</p>
+    </div>
+
+    <div class="dashboard-card">
+        <h3>Pending</h3>
+        <p id="pendingProjects">0</p>
+    </div>
+
+    <div class="dashboard-card">
+        <h3>In Progress</h3>
+        <p id="inProgressProjects">0</p>
+    </div>
+
+    <div class="dashboard-card">
+        <h3>Completed</h3>
+        <p id="completedProjects">0</p>
+    </div>
+
+</div>
+
+    <select id="filterStatus">
+        <option value="All">All Projects</option>
+        <option value="Pending">Pending</option>
+        <option value="In Progress">In Progress</option>
+        <option value="Completed">Completed</option>
+    </select>
+    <select id="sortProjects">
+    <option value="default">Default Order</option>
+    <option value="name-asc">Name (A-Z)</option>
+    <option value="name-desc">Name (Z-A)</option>
+    <option value="newest">Newest First</option>
+    <option value="oldest">Oldest First</option>
+</select>
+</div>
+
+    <section class="projects">
+
+        <h2>My Projects</h2>
+
+        <form id="projectForm">
+
+            <input
+                type="text"
+                id="projectName"
+                placeholder="Enter project name"
+                required
+            >
+
+            <textarea
+                id="projectDescription"
+                placeholder="Enter project description"
+                required
+            ></textarea>
+
+            <select id="projectStatus">
+                <option value="Pending">Pending</option>
+                <option value="In Progress">In Progress</option>
+                <option value="Completed">Completed</option>
+            </select>
+
+            <button type="submit" id="createProjectBtn">
+                Create Project
+            </button>
+
+        </form>
+
+        <div id="projectList" class="project-list"></div>
+
+    </section>
+
+    <!-- Connect JavaScript -->
+    <script src="./js/scripts.js"></script>
+
+</body>
+</html>

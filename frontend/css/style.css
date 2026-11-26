@@ -1,0 +1,106 @@
+
+/* Project section */
+.projects {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Project list */
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/* Project card */
+.project-list > div {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Project heading */
+.project-list h3 {
+    color: #1e293b;
+    margin-top: 0;
+}
+
+/* Project description */
+.project-list p {
+    color: #64748b;
+}
+
+/* Buttons */
+.project-list button {
+    padding: 8px 16px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .project-list {
+        grid-template-columns: 1fr;
+    }
+}
+.status-badge {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.pending {
+    background-color: #fef3c7;
+    color: #92400e;
+}
+
+.in-progress {
+    background-color: #dbeafe;
+    color: #1e40af;
+}
+
+.completed {
+    background-color: #dcfce7;
+    color: #166534;
+}
+.projects {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+#projectForm {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+}
+
+#projectForm input,
+#projectForm textarea,
+#projectForm select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#projectForm button {
+    padding: 10px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

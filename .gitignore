@@ -1,0 +1,16 @@
+# Node dependencies
+node_modules/
+backend/node_modules/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+backend/.env
+
+# Editor files
+.vscode/
+
+# Operating system files
+.DS_Store
+Thumbs.db
